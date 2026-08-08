@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #161b22;
+  border-bottom: 2px solid #7c3aed;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+nav ul a {
+  color: #e6edf3;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+nav ul a:hover,
+nav ul a.active {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.hero {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.hero h1 {
+  font-size: 44px;
+  color: #7c3aed;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #9ca3af;
+}
+
+.hero .avatar {
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #161b22;
+  border: 3px solid #7c3aed;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+section h2 {
+  color: #7c3aed;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.bio-lines p {
+  margin-bottom: 8px;
+}
+
+ul.skill-list,
+ul.tool-list {
+  list-style: none;
+}
+
+ul.skill-list li,
+ul.tool-list li {
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  color: #c9d1d9;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.hint {
+  color: #9ca3af;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.work-card {
+  background-color: #161b22;
+  border: 3px solid #7c3aed;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.work-card:hover {
+  border-color: #8b5cf6;
+  transform: translateY(-4px);
+}
+
+.coming-soon {
+  border: 2px dashed #3b4252;
+  padding: 48px 24px;
+}
+
+.coming-soon:hover {
+  transform: none;
+}
+
+.coming-soon h3 {
+  color: #9ca3af;
+}
+
+.slider {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.work-thumb {
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 2px solid #21262d;
+  background-color: #0d1117;
+  display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(13, 17, 23, 0.8);
+  color: #ffffff;
+  border: 2px solid #7c3aed;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.slider-btn:hover {
+  background-color: #7c3aed;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.work-card:hover {
+  border-color: #7c3aed;
+  transform: translateY(-4px);
+}
+
+.work-card h3 {
+  color: #7c3aed;
+  margin-bottom: 8px;
+}
+
+.work-card p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.contact-links a,
+.contact-link {
+  display: block;
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  color: #c9d1d9;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.contact-links a:hover {
+  border-color: #7c3aed;
+  color: #ffffff;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #9ca3af;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  color: #e6edf3;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+form button {
+  background-color: #7c3aed;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: #8b5cf6;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #9ca3af;
+  border-top: 1px solid #21262d;
+  margin-top: 24px;
+}
+
+.placeholder {
+  color: #565d66;
+  font-style: italic;
+}
