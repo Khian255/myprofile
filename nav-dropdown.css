@@ -1,0 +1,57 @@
+/* Dropdown menu styles — added for the navbar "Connect" dropdown.
+   This file is linked separately so it never has to touch style.css. */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 170px;
+  margin: 10px 0 0;
+  padding: 6px 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  z-index: 20;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 16px;
+  white-space: nowrap;
+  color: #333;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+  background: #f2f2f2;
+}
