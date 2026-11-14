@@ -39,8 +39,8 @@ export const projects = [
     ],
   },
   {
-  title: "Project 5 - My Game",
-  description: "A short description of what you made.",
+  title: "Project 5 - Image Converter",
+  description: "Convert Image to any format and also you can remove background.",
   placeholder: true,
   images: [
     "images/imageconverter/imcon.jfif",
