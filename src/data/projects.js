@@ -23,7 +23,7 @@ export const projects = [
   {
     title: "Project 3 - WeatherTrack",
     description:
-      "This is by far the biggest project i made yet, it is a weather tracking app that works offline",
+      "This is by far the biggest project i made yet, it is a weather tracking app that works offline (this project is not yet done)",
     placeholder: true,
     images: [1, 2, 3, 4, 5, 6, 7, 8].map((n) => `images/weathertrack/wt${n}.jfif`),
   },
@@ -38,4 +38,12 @@ export const projects = [
       "images/aluoperation/428e3557-669c-4642-b90f-e5206539139d.jfif",
     ],
   },
+  {
+  title: "Project 5 - My Game",
+  description: "A short description of what you made.",
+  placeholder: true,
+  images: [
+    "images/imageconverter/imcon.jfif",
+  ],
+},
 ];
